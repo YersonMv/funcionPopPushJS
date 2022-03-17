@@ -13,8 +13,10 @@ let carro= "Carro"
 let moto= "Moto"
 let metro= "Metro"
 
-const agregarMoto= vehiculos => vehiculos.push(moto)
-agregarMoto(vehiculos);
+const agregarVehiculo= (vehiculos,n) => vehiculos.push(n)
+agregarVehiculo(vehiculos,carro);
+agregarVehiculo(vehiculos,moto);
+agregarVehiculo(vehiculos,metro);
 console.log(vehiculos);
 
 const quitarVehiculo = vehiculos=> vehiculos.pop()
